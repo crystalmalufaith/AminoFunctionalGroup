@@ -3,195 +3,137 @@
 <head>
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
-<title>Glycine — Amino Group Explorer</title>
-
+<title>The Amino Group: Glycine Study Guide</title>
 <style>
-  /* ====== RESET ====== */
-  * {margin: 0; padding: 0; box-sizing: border-box; font-family: 'Poppins', sans-serif;}
-
+  * { box-sizing: border-box; margin: 0; padding: 0; }
   body {
-    background: radial-gradient(circle at top left, #1e293b, #0f172a);
-    color: #f8fafc;
+    font-family: 'Poppins', sans-serif;
+    background: linear-gradient(135deg, #000000, #00008B);
     min-height: 100vh;
+    color: #fff;
     display: flex;
     flex-direction: column;
     align-items: center;
-    padding: 3rem 1rem;
   }
-
   header {
     text-align: center;
-    margin-bottom: 2rem;
-    animation: fadeDown 1s ease forwards;
+    padding: 3rem 1rem 2rem;
   }
   header h1 {
     font-size: 2.5rem;
-    background: linear-gradient(to right, #22d3ee, #3b82f6);
+    background: linear-gradient(90deg, #000000, #00008B);
     -webkit-background-clip: text;
     -webkit-text-fill-color: transparent;
-    letter-spacing: 1px;
+    margin-bottom: 0.5rem;
   }
   header p {
-    font-size: 1rem;
-    color: #94a3b8;
+    color: #ccc;
+    font-size: 1.1rem;
   }
-
+  .container {
+    width: 95%;
+    max-width: 900px;
+    display: grid;
+    gap: 1.5rem;
+    margin-bottom: 4rem;
+  }
   .card {
-    background: rgba(255, 255, 255, 0.05);
+    background: rgba(0, 0, 0, 0.7);
     backdrop-filter: blur(12px);
-    border: 1px solid rgba(255, 255, 255, 0.1);
-    border-radius: 20px;
+    border-radius: 18px;
     padding: 2rem;
-    max-width: 800px;
-    width: 100%;
-    margin-bottom: 1.8rem;
-    box-shadow: 0 8px 25px rgba(0, 0, 0, 0.3);
-    animation: fadeUp 1s ease;
+    box-shadow: 0 4px 18px rgba(255,255,255,0.05);
+    transition: all 0.3s ease;
   }
-
-  .card h2 {
-    font-size: 1.3rem;
-    margin-bottom: 0.8rem;
-    color: #38bdf8;
+  .card:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 6px 25px rgba(255,255,255,0.1);
   }
-
-  .card p, .card pre {
-    color: #e2e8f0;
+  h2 {
+    color: #fff;
+    margin-bottom: 0.5rem;
+  }
+  p {
     line-height: 1.6;
-    font-size: 0.95rem;
+    color: #ddd;
+    margin-bottom: 1rem;
   }
-
-  .card pre {
-    background: rgba(255, 255, 255, 0.05);
-    border-radius: 12px;
-    padding: 0.75rem 1rem;
-    overflow-x: auto;
-    border-left: 3px solid #3b82f6;
+  .iframe-wrapper {
+    border-radius: 16px;
+    overflow: hidden;
+    box-shadow: 0 2px 10px rgba(255,255,255,0.08);
+    margin-top: 1rem;
   }
-
   iframe {
     width: 100%;
-    height: 400px;
-    border-radius: 16px;
+    height: 360px;
     border: none;
-    margin-top: 1rem;
-    box-shadow: 0 4px 15px rgba(0,0,0,0.3);
   }
-
-  .info-grid {
-    display: grid;
-    grid-template-columns: repeat(auto-fit, minmax(160px, 1fr));
-    gap: 1rem;
-    margin-top: 1.5rem;
-  }
-
-  .info {
-    background: rgba(255, 255, 255, 0.06);
-    border-radius: 12px;
-    padding: 1rem;
-    text-align: center;
-    box-shadow: inset 0 0 8px rgba(255,255,255,0.05);
-  }
-
-  .info small {
-    display: block;
-    color: #94a3b8;
-    font-size: 0.8rem;
-  }
-  .info strong {
-    font-size: 1.05rem;
-    color: #f1f5f9;
-  }
-
-  button {
-    background: linear-gradient(135deg, #06b6d4, #3b82f6);
-    color: white;
-    border: none;
-    padding: 0.75rem 1.5rem;
-    border-radius: 12px;
-    cursor: pointer;
-    font-weight: 600;
-    margin-top: 1.5rem;
-    box-shadow: 0 4px 20px rgba(59,130,246,0.4);
-    transition: 0.3s ease;
-  }
-  button:hover {
-    transform: translateY(-2px);
-    box-shadow: 0 6px 25px rgba(6,182,212,0.5);
-  }
-
   footer {
-    margin-top: 2rem;
     text-align: center;
+    color: #ccc;
+    padding: 2rem;
     font-size: 0.9rem;
-    color: #64748b;
-  }
-
-  @keyframes fadeUp {
-    from {opacity: 0; transform: translateY(30px);}
-    to {opacity: 1; transform: translateY(0);}
-  }
-  @keyframes fadeDown {
-    from {opacity: 0; transform: translateY(-30px);}
-    to {opacity: 1; transform: translateY(0);}
   }
 </style>
 </head>
-
 <body>
-  <header>
-    <h1>Glycine — Amino Functional Group</h1>
-  </header>
 
-   <div class="card">
+<header>
+  <h2>The Amino Group: Glycine</h2></header>
+
+<div class="container">
+
+  <div class="card">
     <h2>Developed and Submitted by:</h2>
     <p>Crystal Faith G. Cabanatan</p>
     <p></p>STEM 12 - DM</p>
    </div>
 
   <div class="card">
-    <h2>3D Structure of Glycine</h2>
-    <iframe title="Glycine Molecule 3D" 
-      src="https://sketchfab.com/models/e7d8bd505d4e4ed183e458d95eb396c9/embed" 
-      allow="autoplay; fullscreen; vr" 
-      allowfullscreen>
-    </iframe>
+    <h2>1. Compound Identification</h2>
+    <p><strong>Compound:</strong> Glycine</p>
+    <p><strong>Chemical Formula:</strong> NH<sub>2</sub>CH<sub>2</sub>COOH</p>
+    <p>Glycine, the smallest amino acid, has a NH<sub>2</sub> and COOH. In the brain it is a neuropeptide; acting there as a neurotransmitter in addition to being a powerful regulator of other neurotransmitters (such as serotonin).
+</p>
+    <div class="iframe-wrapper">
+      <iframe title="Glycine 3D model"
+        src="https://sketchfab.com/models/e7d8bd505d4e4ed183e458d95eb396c9/embed"
+        allow="autoplay; fullscreen; vr"
+        allowfullscreen></iframe>
+    </div>
   </div>
 
   <div class="card">
-    <h2>1. Compound & Structure</h2>
-    <p><strong>Compound:</strong> Glycine (Amino acid containing an amino group -NH₂)</p>
-    <p><strong>Chemical Formula:</strong> C₂H₅NO₂</p>
-    <p><strong>Condensed Structure:</strong> NH₂–CH₂–COOH</p>
-    <p>This simple amino acid contains both amino and carboxyl groups attached to the same carbon atom.</p>
+    <h2>2. Isomer Comparison</h2>
+    <p>The chemical form of glycine is also partially isomerized to methyl carbamate. For example, glycine with amino and carboxyl groups bonded to the same C-atom[3] is not a PO inhibitor whereas methyl carbamate with these two groups at different C-atoms is.
+</p>
+    <p>This structural difference is reflected even more strongly in the chemical reactivity: glycine is easily dissolved by water with a significantly amphoteric but zwitterionic side chain, whereas methyl carbamate behaves like an ester.
+</p>
   </div>
 
   <div class="card">
-    <h2>2. Isomer</h2>
-    <p><strong>Isomer:</strong> Methyl carbamate (H₃C–O–C(=O)–NH₂)</p>
-    <p>While glycine has separate amino and carboxyl groups, methyl carbamate contains a carbamate linkage (-O–C(=O)–NH₂), altering its chemical properties.</p>
+    <h2>3. Polymer Formation</h2>
+    <p>Polymers of glycine As amino acids, glycines can be polymerized to form long chains (polymers or copolymers). One is the amino group of a glycine bonding to the carboxy group of another and so on for peptide linkages (-CONH-). Polyglycine can kink and also turn corners, and it is lightweight to serve as a kind of support frame for proteins such as collagen.
+</p>
   </div>
 
   <div class="card">
-    <h2>3. Polymer — Polyglycine</h2>
-    <p><strong>Repeating unit:</strong> –NH–CH₂–CO–</p>
-    <p>Formed through condensation of glycine molecules, polyglycine exhibits flexibility and protein-like structure.</p>
-    <p><strong>Properties:</strong> Biodegradable, flexible, and can form stable peptide chains.</p>
+    <h2>4. Chemical Reactions</h2>
+    <p style="font-family: monospace;">2 NH₂CH₂COOH → NH₂CH₂CONHCH₂COOH + H₂O</p>
+    <p>Another reaction is <strong>combustion</strong>, producing carbon dioxide, water, and nitrogen:</p>
+    <p style="font-family: monospace;">4 NH₂CH₂COOH + 9 O₂ → 8 CO₂ + 10 H₂O + 2 N₂</p>
   </div>
 
   <div class="card">
-    <h2>4. Reaction — Peptide Bond Formation</h2>
-    <p><strong>Reaction Type:</strong> Condensation</p>
-    <pre>NH₂–CH₂–COOH + NH₂–CH₂–COOH → NH₂–CH₂–CO–NH–CH₂–COOH + H₂O</pre>
-    <p>This peptide bond formation links amino acids, releasing water and forming dipeptides—fundamental in protein synthesis.</p>
+    <h2>5. Preparation and Synthesis</h2>
+    <p>Glycine is produced industrially by Strecker synthesis, and synthesizing it using the frustrated Lewis pair would likely not have any advantages over the current methodology.
+</p>
+    <p>In the human body, the enzyme serine hydroxymethyltransferase can transform glycine into serine and generate 5,10-methylenetetrahydrofolate; while for animals that are incapable of synthesizing it, glycine is one of the essential amino acids.
+</p>
   </div>
 
-  <div class="card">
-    <h2>5. Preparation / Synthesis</h2>
-    <p><strong>Industrial:</strong> ClCH₂COOH + NH₃ → NH₂CH₂COOH + HCl (amination of chloroacetic acid)</p>
-    <p><strong>Laboratory:</strong> Strecker synthesis (Aldehyde + NH₃ + HCN → aminonitrile → hydrolysis → amino acid)</p>
-    <p><strong>Natural:</strong> Produced enzymatically from serine via serine hydroxymethyltransferase.</p>
-  </div>
+</div>
 
 </body>
 </html>
