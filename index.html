@@ -1,0 +1,197 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Glycine — Amino Group Explorer</title>
+
+<style>
+  /* ====== RESET ====== */
+  * {margin: 0; padding: 0; box-sizing: border-box; font-family: 'Poppins', sans-serif;}
+
+  body {
+    background: radial-gradient(circle at top left, #1e293b, #0f172a);
+    color: #f8fafc;
+    min-height: 100vh;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 3rem 1rem;
+  }
+
+  header {
+    text-align: center;
+    margin-bottom: 2rem;
+    animation: fadeDown 1s ease forwards;
+  }
+  header h1 {
+    font-size: 2.5rem;
+    background: linear-gradient(to right, #22d3ee, #3b82f6);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    letter-spacing: 1px;
+  }
+  header p {
+    font-size: 1rem;
+    color: #94a3b8;
+  }
+
+  .card {
+    background: rgba(255, 255, 255, 0.05);
+    backdrop-filter: blur(12px);
+    border: 1px solid rgba(255, 255, 255, 0.1);
+    border-radius: 20px;
+    padding: 2rem;
+    max-width: 800px;
+    width: 100%;
+    margin-bottom: 1.8rem;
+    box-shadow: 0 8px 25px rgba(0, 0, 0, 0.3);
+    animation: fadeUp 1s ease;
+  }
+
+  .card h2 {
+    font-size: 1.3rem;
+    margin-bottom: 0.8rem;
+    color: #38bdf8;
+  }
+
+  .card p, .card pre {
+    color: #e2e8f0;
+    line-height: 1.6;
+    font-size: 0.95rem;
+  }
+
+  .card pre {
+    background: rgba(255, 255, 255, 0.05);
+    border-radius: 12px;
+    padding: 0.75rem 1rem;
+    overflow-x: auto;
+    border-left: 3px solid #3b82f6;
+  }
+
+  iframe {
+    width: 100%;
+    height: 400px;
+    border-radius: 16px;
+    border: none;
+    margin-top: 1rem;
+    box-shadow: 0 4px 15px rgba(0,0,0,0.3);
+  }
+
+  .info-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(160px, 1fr));
+    gap: 1rem;
+    margin-top: 1.5rem;
+  }
+
+  .info {
+    background: rgba(255, 255, 255, 0.06);
+    border-radius: 12px;
+    padding: 1rem;
+    text-align: center;
+    box-shadow: inset 0 0 8px rgba(255,255,255,0.05);
+  }
+
+  .info small {
+    display: block;
+    color: #94a3b8;
+    font-size: 0.8rem;
+  }
+  .info strong {
+    font-size: 1.05rem;
+    color: #f1f5f9;
+  }
+
+  button {
+    background: linear-gradient(135deg, #06b6d4, #3b82f6);
+    color: white;
+    border: none;
+    padding: 0.75rem 1.5rem;
+    border-radius: 12px;
+    cursor: pointer;
+    font-weight: 600;
+    margin-top: 1.5rem;
+    box-shadow: 0 4px 20px rgba(59,130,246,0.4);
+    transition: 0.3s ease;
+  }
+  button:hover {
+    transform: translateY(-2px);
+    box-shadow: 0 6px 25px rgba(6,182,212,0.5);
+  }
+
+  footer {
+    margin-top: 2rem;
+    text-align: center;
+    font-size: 0.9rem;
+    color: #64748b;
+  }
+
+  @keyframes fadeUp {
+    from {opacity: 0; transform: translateY(30px);}
+    to {opacity: 1; transform: translateY(0);}
+  }
+  @keyframes fadeDown {
+    from {opacity: 0; transform: translateY(-30px);}
+    to {opacity: 1; transform: translateY(0);}
+  }
+</style>
+</head>
+
+<body>
+  <header>
+    <h1>Glycine — Amino Functional Group</h1>
+  </header>
+
+   <div class="card">
+    <h2>Developed and Submitted by:</h2>
+    <p>Crystal Faith G. Cabanatan</p>
+    <p></p>STEM 12 - DM</p>
+   </div>
+
+  <div class="card">
+    <h2>3D Structure of Glycine</h2>
+    <iframe title="Glycine Molecule 3D" 
+      src="https://sketchfab.com/models/e7d8bd505d4e4ed183e458d95eb396c9/embed" 
+      allow="autoplay; fullscreen; vr" 
+      allowfullscreen>
+    </iframe>
+  </div>
+
+  <div class="card">
+    <h2>1. Compound & Structure</h2>
+    <p><strong>Compound:</strong> Glycine (Amino acid containing an amino group -NH₂)</p>
+    <p><strong>Chemical Formula:</strong> C₂H₅NO₂</p>
+    <p><strong>Condensed Structure:</strong> NH₂–CH₂–COOH</p>
+    <p>This simple amino acid contains both amino and carboxyl groups attached to the same carbon atom.</p>
+  </div>
+
+  <div class="card">
+    <h2>2. Isomer</h2>
+    <p><strong>Isomer:</strong> Methyl carbamate (H₃C–O–C(=O)–NH₂)</p>
+    <p>While glycine has separate amino and carboxyl groups, methyl carbamate contains a carbamate linkage (-O–C(=O)–NH₂), altering its chemical properties.</p>
+  </div>
+
+  <div class="card">
+    <h2>3. Polymer — Polyglycine</h2>
+    <p><strong>Repeating unit:</strong> –NH–CH₂–CO–</p>
+    <p>Formed through condensation of glycine molecules, polyglycine exhibits flexibility and protein-like structure.</p>
+    <p><strong>Properties:</strong> Biodegradable, flexible, and can form stable peptide chains.</p>
+  </div>
+
+  <div class="card">
+    <h2>4. Reaction — Peptide Bond Formation</h2>
+    <p><strong>Reaction Type:</strong> Condensation</p>
+    <pre>NH₂–CH₂–COOH + NH₂–CH₂–COOH → NH₂–CH₂–CO–NH–CH₂–COOH + H₂O</pre>
+    <p>This peptide bond formation links amino acids, releasing water and forming dipeptides—fundamental in protein synthesis.</p>
+  </div>
+
+  <div class="card">
+    <h2>5. Preparation / Synthesis</h2>
+    <p><strong>Industrial:</strong> ClCH₂COOH + NH₃ → NH₂CH₂COOH + HCl (amination of chloroacetic acid)</p>
+    <p><strong>Laboratory:</strong> Strecker synthesis (Aldehyde + NH₃ + HCN → aminonitrile → hydrolysis → amino acid)</p>
+    <p><strong>Natural:</strong> Produced enzymatically from serine via serine hydroxymethyltransferase.</p>
+  </div>
+
+</body>
+</html>
